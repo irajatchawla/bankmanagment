@@ -37,12 +37,12 @@ class bank:
 			print('\n')
 			print('press U for updating information')
 			print('press T for Transactions')
-			print('press H for going back to home')
+			print('press G for going back to home')
 			print('press C for checking details \n')
 			sukhi=input().lower()
 			if sukhi=='t':
 				self.Transactions()
-			if sukhi=='h':
+			if sukhi=='g':
 				self.initial()
 			if sukhi=='u':
 				self.update()
@@ -107,7 +107,7 @@ class bank:
 		j={self.name:{self.name:[self.address,self.contact,self.email]}}
 		print(j[self.name])
 		print('\n')
-		print('press L for LOGIN ,H for GO ON HOMEPAGE, E for EXIT ,U for updating data \n ')
+		print('press L for LOGIN ,G for GO ON HOMEPAGE, E for EXIT ,U for updating data \n ')
 		mom=input().lower()
 		if mom=='l':
 			self.login()
